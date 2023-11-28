@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/nav.css">
+  <link rel="stylesheet" href="./stylesheets/login.css">
+</head>
+
+<body><nav>
+  <div class="logo">
+      <img src="./logo.png" alt="Logo">
+  </div>
+  <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/find">Teams</a></li>
+      <li><a href="/hackathon">Hackathon</a></li>
+      <li><a href="/about">About</a></li>
+      <li>
+          
+
+              <a href="/login">Login</a>
+      </li>
+  </ul>
+</nav>
+<div class="parent">
+
+  <div class="container">
+    <h1>WELCOME TO CODECAP COMMUNITY</h1>
+    <br>
+    <img src="./images/logo.png" alt="CodeCap Community Logo">
+    <br>
+    <% if(error.length>0){ %>
+      <p class="error"> <%=error %> </p>
+     <% } %>
+    <form action="/login" method="post">
+      
+      
+      <input type="text" name="username" placeholder="Username">
+      
+      
+      <input type="password" name="password" placeholder="Password">
+      
+      
+      <button type="submit">LOGIN</button>
+    </form>
+    
+    <p>Doesn't have an account?</p>
+    <a href="/register">REGISTER NOW</a>
+  </div>
+</div>
+</body>
+
+</html>

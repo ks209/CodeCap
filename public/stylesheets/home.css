@@ -1,0 +1,19 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body{
+  background: rgb(16,0,40);
+background: -moz-linear-gradient(349deg, rgba(16,0,40,1) 0%, rgba(133,101,146,1) 67%, rgba(68,64,70,1) 84%, rgba(66,9,90,1) 95%);
+background: -webkit-linear-gradient(349deg, rgba(16,0,40,1) 0%, rgba(133,101,146,1) 67%, rgba(68,64,70,1) 84%, rgba(66,9,90,1) 95%);
+background: linear-gradient(349deg, rgba(16,0,40,1) 0%, rgba(133,101,146,1) 67%, rgba(68,64,70,1) 84%, rgba(66,9,90,1) 95%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#100028",endColorstr="#42095a",GradientType=1);
+}

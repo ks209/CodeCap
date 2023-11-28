@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Teamates</title>
+    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/find.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+    </div>
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/find">Teams</a></li>
+        <li><a href="/hackathon">Hackathon</a></li>
+        <li><a href="/about">About</a></li>
+        <li>
+            <div class="profile-dropdown">
+                <a href="#"><img src="profile.png" alt="Profile Icon"></a>
+                <ul>
+                    <li><a href="/update">Account</a></li>
+                    <li>
+                      <form action="/status" method="post">
+                        <label id="status" for="status">Select your status:</label>
+                        <select id="statusdrop" onchange="this.form.submit()" name="status">
+                            <option value="Available">Available</option>
+                            <option value="Busy">Busy</option>
+                            <option value="In Team">In Team</option>
+                        </select>
+                    </form>
+                    </li>
+                    <li><a href="/logout">Logout</a></li>
+
+                </ul>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="parent">
+
+  <div class="search">
+    
+  </div>
+
+  <% users.forEach(function(user) { %>
+    <div class="user-card">
+      <div class="uimg">
+        <img src="<%=user.img%>" alt="">
+      </div>
+      <div class="user-card-child">
+
+        <h1><%= user.fullname %></h1>
+        <br>
+        <p><strong>Gender:</strong> <%= user.gender %></p>
+        <p><strong>College:</strong> <%= user.college %></p>
+        <p><strong>Branch:</strong> <%= user.branch %></p>
+        <p><strong>Email:</strong> <%= user.email %></p>
+        <p><strong>Skills:</strong> <%= user.skills.join(', ') %></p>
+        <p><strong>Year:</strong> <%= user.year %></p>
+        <p><strong>Role:</strong> <%= user.role %></p>
+        <p style="color: <%= user.status === 'Available' ? 'green' : user.status === 'Busy' ? 'yellow' : 'red' %>;"><strong>Status: </strong><%= user.status %></p>
+        <p><strong>Github:</strong> <a href="<%= user.github %>" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><strong>LinkedIn:</strong> <a href="<%= user.linkedin %>" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      </div>
+    </div>
+      <% }); %>
+        
+      </div>
+      <script src="./javascripts/statushandler.js"></script>
+</body>
+</html>

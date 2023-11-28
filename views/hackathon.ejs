@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Alerts</title>
+  <link rel="stylesheet" href="./stylesheets/nav.css">
+  <link rel="stylesheet" href="./stylesheets/hackathon.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/find">Teams</a></li>
+            <li><a href="/hackathon">Hackathon</a></li>
+            <li><a href="/about">About</a></li>
+            <li>
+                <div class="profile-dropdown">
+                    <a href="#"><img src="profile.png" alt="Profile Icon"></a>
+                    <ul>
+                        <li><a href="/update">Account</a></li>
+                        <li>
+                          <form action="/status" method="post">
+                            <label id="status" for="status">Select your status:</label>
+                            <select id="statusdrop" onchange="this.form.submit()" name="status">
+                                <option value="Available">Available</option>
+                                <option value="Busy">Busy</option>
+                                <option value="In Team">In Team</option>
+                            </select>
+                        </form>
+                        </li>
+                        <li><a href="/logout">Logout</a></li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="parent">
+
+      <h1>HACKATHON ALERTS</h1>
+      <% hackathons.forEach(function(hackathon) { %>
+        <div class="hackathon-card">
+          <div class="uimg">
+            <img src="<%= hackathon.img%>" alt="hackathon-img">
+          </div>
+
+          <div>
+            <h2 style="padding: 1vw;"><%= hackathon.title %></h2>
+            
+            <div class="hackathon-card-child">
+            <p><strong>Date:</strong> <%= hackathon.date.toDateString() %></p>
+            <p><strong>Location:</strong> <%= hackathon.location %></p>
+            <p><strong>Registration Deadline:</strong> <%= hackathon.registrationDeadline ? hackathon.registrationDeadline.toDateString() : 'Not specified' %></p>
+            <p><strong>Prizes:</strong> <%= hackathon.prizes %></p>
+            <p><strong>Tools:</strong> <%= hackathon.tools.join(', ') %></p>
+            <p><strong>Mentors Available:</strong> <%= hackathon.mentorsAvailable ? 'Yes' : 'No' %></p>
+            <p><strong>Contact Email:</strong> <%= hackathon.contactEmail %></p>
+          <p><strong>Registration Link:</strong> <%= hackathon.registrationLink %></p>
+          <p><strong>Description:</strong> <%= hackathon.Description %></p>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+      </div>
+      <script src="./javascripts/statushandler.js"></script>
+      </body>
+      </html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.parent{
+color: white;
+height: calc(100vh - 4vw);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+p{
+  text-align: center;
+}
+  
+  .container {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: rgba(218,218,218,0.5);
+    color: #54017D;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 20px;
+  }
+
+
+  
+  label {
+    display: block;
+    padding: 5px;
+    font-size: 1.2vw;
+    font-weight: 800;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.3vw;
+    background-color: rgb(135, 3, 86);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="text"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+
+  input[type="password"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+
+  input[type="email"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+
+  .already{
+    font-weight: 800;
+  }
+  
+  .container a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(135, 3, 86);  
+    padding: 1vw 2vw;
+    border-radius:1px solid black ;
+  }
+  

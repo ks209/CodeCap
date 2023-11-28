@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-Hackathon</title>
+    <link rel="stylesheet" href="./stylesheets/create.css">
+</head>
+<body>
+    <form action="/create-hackathon" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required><br>
+      
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+      
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location"><br>
+      
+        <label for="Description">Description:</label>
+        <input type="text" id="Description" name="Description"><br>
+      
+        <label for="registrationDeadline">Registration Deadline:</label>
+        <input type="date" id="registrationDeadline" name="registrationDeadline"><br>
+      
+        <label for="prizes">Prizes:</label>
+        <input type="text" id="prizes" name="prizes"><br>
+      
+        <label for="tools">Tools (comma-separated):</label>
+        <input type="text" id="tools" name="tools"><br>
+
+        <label for="team size">team size </label>
+        <input type="text" id="team size" name="teamsize"><br>
+      
+        <label for="mentorsAvailable">Mentors Available:</label>
+        <input type="checkbox" id="mentorsAvailable" name="mentorsAvailable" value="true"><br>
+      
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" required><br>
+      
+        <label for="registrationLink">Registration Link:</label>
+        <input type="text" id="registrationLink" name="registrationLink"><br>
+
+        <label for="img">Image Link:</label>
+        <input type="text" id="img" name="img"><br>
+      
+        <input type="submit" value="Create Hackathon">
+      </form>
+      
+</body>
+</html>

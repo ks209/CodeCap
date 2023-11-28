@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap');
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 8vw;
+    color: #000;
+    background: rgba(16,0,40,0.7);
+}
+
+body{
+    background-image: url(../images/1.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+#statusdrop{
+    display: none;
+}
+
+.logo {
+    flex: 0 0 200px;
+}
+
+.logo img {
+    width: 80%;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 20px;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-dropdown img{
+    height: 40px;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-dropdown a {
+    display: block;
+}
+
+.profile-dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: none;
+}
+
+.profile-dropdown:hover ul {
+    display: block;
+}
+
+.profile-dropdown ul li {
+    margin-bottom: 10px;
+}
+
+.profile-dropdown ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.profile-dropdown ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media (max-width: 480px) {
+    /* CSS styles for smaller mobile devices */
+  }

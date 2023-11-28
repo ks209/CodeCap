@@ -1,0 +1,145 @@
+*{
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Smooch Sans', sans-serif;
+}
+
+.parent{
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+  .container {
+    transform: scale(00.8);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(218,218,218,0.7);
+    color: purple;
+    padding: 3vw;
+    border-radius: 10%;
+  }
+
+  #update form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  #update form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #update form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #update form input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+  }
+
+  .container a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 26, 73);  
+    padding: 1vw 2vw;
+    border-radius:1px solid black ;
+  }
+
+  select{
+    font-weight: 700;
+  }
+
+  option{
+    font-weight: 700;
+  }
+  
+  img {
+    width: auto;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 100px;
+  }  
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 1.3vw;
+    background-color: rgb(73, 26, 73);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="text"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+  
+  input[type="url"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+  
+  input[type="email"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+
+  input[type="number"]{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+
+  select{
+    background-color: #dadada;
+    border-radius: 10px;
+  }
+
+  label{
+    font-size: 2vw;
+    font-weight: 700;
+    padding-top: 1vw;
+  }
+
+  input{
+    color: black;
+    font-weight: 800;
+  }
