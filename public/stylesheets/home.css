@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Smooch Sans', sans-serif;
+    color: #FFF;
 }
 
 body{
@@ -17,3 +18,213 @@ background: -webkit-linear-gradient(349deg, rgba(16,0,40,1) 0%, rgba(133,101,146
 background: linear-gradient(349deg, rgba(16,0,40,1) 0%, rgba(133,101,146,1) 67%, rgba(68,64,70,1) 84%, rgba(66,9,90,1) 95%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#100028",endColorstr="#42095a",GradientType=1);
 }
+
+body{
+  background-image: url(../images/1.jpg);
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+.hero{
+  background-image: url('../images/home.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-Content{
+  display: flex;
+  padding: 2% 12%;
+  padding-bottom: 50px;
+  margin-top: 3%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(225, 218, 218, 0.4);
+  border: 1px solid rgb(255, 255, 255);
+
+  fill: rgba(255, 255, 255, 0.20);
+  stroke-width: 2px;
+  stroke: rgba(255, 255, 255, 0.40);
+  backdrop-filter: blur(20px);
+}
+
+.hero-left{
+  flex: 1;
+}
+.hero-right{
+  flex: 1;
+}
+
+.cap-text{
+  text-align: center;
+  margin-top: -40px;
+  /* Main Heading */
+  font-family: Archivo Black;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 85.092%; /* 2.65913rem */
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  margin-top: -30px;
+}
+
+.button > button{
+  width: 20rem;
+  height: 3.6875rem;
+  padding: 0.70rem 2.4375rem;
+  border-radius: 4.6875rem;
+  border: 1px solid #750F77;
+  background: linear-gradient(94deg, #54017D 15.91%, #9E206F 91.98%);
+  font-size:x-large;
+  font-weight: 600;
+  letter-spacing: 2px;
+  z-index: 10;
+}
+
+.icon-down{
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.h-offer{
+  text-align: center;
+  margin-top:30px;
+  margin-bottom:30px;
+  letter-spacing: 2px;
+}
+
+.box{
+  border-radius: 1.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  background: rgba(217, 217, 217, 0.12);
+  backdrop-filter: blur(23.600000381469727px);
+  width: 71rem;
+  height: 27.1875rem;
+  flex-shrink: 0;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+/*box 1*/
+.box1{
+    display: flex;
+    flex: 1;
+}
+
+.box1 > .box-left > img{
+  margin-top: -3.6rem;
+}
+
+.box1 > .box-right{
+  padding: 3.6rem;
+  padding-right: 10rem;
+}
+
+.box1 > .box-right > h1{
+  color: #FF18A9;
+/* Sub heading 1 */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85.092%; /* 1.06363rem */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box1 > .box-right > p{
+  margin-top: 1rem ;
+  margin-bottom: 1.5rem ;
+}
+
+.box1 > .box-right > button{
+  border-radius: 4.6875rem;
+  border: 1px solid #6B5FBA;
+  background: linear-gradient(276deg, #B684FD 4.74%, #00295A 118.86%);
+  padding: 5px;
+  width: 8rem;
+  letter-spacing: 2px;
+}
+
+
+/*box 2*/
+.box2{
+    display: flex;
+    flex: 1;
+}
+
+.box2 > .box-left > img{
+  margin-top: 1rem;
+  margin-right: 5rem;
+  margin-left: -8rem;
+}
+
+.box2 > .box-right{
+  padding: 3.6rem;
+  padding-right: 10rem;
+}
+
+.box2 > .box-right > h1{
+  color: #FF18A9;
+/* Sub heading 1 */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85.092%; /* 1.06363rem */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box2 > .box-right > p{
+  margin-top: 1rem ;
+  margin-bottom: 1.5rem ;
+}
+
+
+/*box 3*/
+.box3{
+    display: flex;
+    flex: 1;
+}
+
+.box3 > .box-right{
+  padding: 3.6rem;
+  padding-right: 10rem;
+}
+
+.box3 > .box-right > h1{
+  color: #FF18A9;
+/* Sub heading 1 */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85.092%; /* 1.06363rem */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box3 > .box-right > p{
+  margin-top: 1rem ;
+  margin-bottom: 1.5rem ;
+}
+
+.box3 > .box-right > button{
+  border-radius: 4.6875rem;
+  border: 1px solid #6B5FBA;
+  background: linear-gradient(276deg, #B684FD 4.74%, #00295A 118.86%);
+  padding: 5px;
+  width: 8rem;
+  letter-spacing: 2px;
+}
+

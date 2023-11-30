@@ -19,8 +19,8 @@ nav {
 
 body{
     background-image: url(../images/1.jpg);
-  background-repeat: repeat-y;
-  background-size: cover;
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 #statusdrop{
