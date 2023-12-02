@@ -74,7 +74,7 @@ align-items: center;
     margin-bottom: 20px;
   }
   
-  label {
+  .container label {
     display: block;
     margin-bottom: 5px;
   }
@@ -133,7 +133,7 @@ align-items: center;
     border-radius: 10px;
   }
 
-  label{
+  .container label{
     font-size: 2vw;
     font-weight: 700;
     padding-top: 1vw;
@@ -142,4 +142,12 @@ align-items: center;
   input{
     color: black;
     font-weight: 800;
+  }
+
+  @media screen and (max-width: 480px) {
+    .container{
+      transform: scale(0.9);
+      width: 80vw;
+    }
+
   }

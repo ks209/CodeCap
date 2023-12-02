@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div class="hero">
     <nav>
         <div class="logo">
             <img src="./logo.png" alt="Logo">
@@ -22,10 +21,10 @@
             <li><a href="/about">About</a></li>
             <li>
                 <% if(show){ %>
-                <div class="profile-dropdown">
-                    <a href="#"><img src="profile.png" alt="Profile Icon"></a>
-                    <ul>
-                        <li><a href="/update">Account</a></li>
+                    <div class="profile-dropdown">
+                        <a href="#"><img src="profile.png" alt="Profile Icon"></a>
+                        <ul>
+                            <li><a href="/update">Account</a></li>
                         <li>
                             <form action="/status" method="post">
                                 <label id="status" for="status">Select your status:</label>
@@ -37,17 +36,18 @@
                             </form>
                         </li>
                         <li><a href="/logout">Logout</a></li>
-
+                        
                     </ul>
                 </div>
                 <% }else{ %>
                     <a href="/login">Login</a>
                     <% } %>
-            </li>
-        </ul>
-    </nav>
-    
-    <div class="hero-Content">
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="hero">
+        <div class="hero-Content">
         <div class="hero-left">
             <img src="../images/cap.png">
             <h2 class="cap-text">CODECAP<br>COMMUNITY</h2>

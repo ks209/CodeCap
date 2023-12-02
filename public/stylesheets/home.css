@@ -30,23 +30,30 @@ body{
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .hero-Content{
   display: flex;
-  padding: 2% 12%;
+  width: 80%;
+  padding: 2vw 5vw;
   padding-bottom: 50px;
-  margin-top: 3%;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
   background-color: rgba(225, 218, 218, 0.4);
   border: 1px solid rgb(255, 255, 255);
-
   fill: rgba(255, 255, 255, 0.20);
   stroke-width: 2px;
   stroke: rgba(255, 255, 255, 0.40);
   backdrop-filter: blur(20px);
+}
+
+.hero-Content img{
+  width: 100%;
 }
 
 .hero-left{
@@ -110,8 +117,7 @@ body{
   border: 1px solid rgba(255, 255, 255, 0.40);
   background: rgba(217, 217, 217, 0.12);
   backdrop-filter: blur(23.600000381469727px);
-  width: 71rem;
-  height: 27.1875rem;
+  width: 80vw;
   flex-shrink: 0;
   margin: auto;
   margin-bottom: 5rem;
@@ -123,8 +129,14 @@ body{
     flex: 1;
 }
 
+.box-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .box1 > .box-left > img{
-  margin-top: -3.6rem;
+  width: 30vw;
 }
 
 .box1 > .box-right{
@@ -164,10 +176,15 @@ body{
     flex: 1;
 }
 
+.box2 > .box-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .box2 > .box-left > img{
-  margin-top: 1rem;
-  margin-right: 5rem;
-  margin-left: -8rem;
+  width: auto;
+  height: 90%;
 }
 
 .box2 > .box-right{
@@ -214,10 +231,18 @@ body{
   letter-spacing: 2px;
 }
 
-.box3 > .box-right > p{
+.box-right{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .box3 > .box-right > p{
   margin-top: 1rem ;
   margin-bottom: 1.5rem ;
-}
+} */
 
 .box3 > .box-right > button{
   border-radius: 4.6875rem;
@@ -228,3 +253,11 @@ body{
   letter-spacing: 2px;
 }
 
+.box h1{
+  font-size: 20%;
+}
+
+.box3 img{
+  width: auto;
+  height: 90%;
+}
