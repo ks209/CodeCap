@@ -57,7 +57,7 @@ function isLoggedIn(req, res, next){
 }
 
 router.get('/register', function(req, res, next) {
-  res.render('register');
+  res.render('register',{error: req.flash('error')});
 });
 
 router.post("/register", function(req, res){
