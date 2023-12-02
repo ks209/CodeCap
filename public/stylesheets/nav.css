@@ -20,10 +20,8 @@ nav {
 
 body{
     background-image: url(../images/1.jpg);
-  background-repeat: repeat-y;
-  background-size: cover;
-  min-height: 100vh;
-  width: 100vw;
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 #statusdrop{
