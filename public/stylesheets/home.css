@@ -23,17 +23,19 @@ body{
   background-image: url(../images/1.jpg);
   background-repeat: repeat-y;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .hero{
   background-image: url('../images/home.png');
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  width: 100vw;
+  padding: 10vw 0;
 }
 
 .hero-Content{
@@ -120,7 +122,6 @@ body{
   width: 80vw;
   flex-shrink: 0;
   margin: auto;
-  margin-bottom: 5rem;
 }
 
 /*box 1*/
@@ -212,7 +213,6 @@ body{
 /*box 3*/
 .box3{
     display: flex;
-    flex: 1;
 }
 
 .box3 > .box-right{
@@ -260,4 +260,41 @@ body{
 .box3 img{
   width: auto;
   height: 90%;
+}
+
+.boxc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-right p{
+  color: #000;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .hero-left img{
+    height: 40%;
+    width: auto;
+  }
+
+  .hero-Content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box{
+    flex-direction: column;
+  }
+
+  .box img{
+    width: 80%;
+    height: auto;
+  }
+
+
+
 }
