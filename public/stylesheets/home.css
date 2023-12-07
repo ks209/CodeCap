@@ -287,6 +287,7 @@ body{
   }
 
   .box{
+    display: flex;
     flex-direction: column;
   }
 
@@ -294,6 +295,25 @@ body{
     width: 80%;
     height: auto;
   }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .hero-Content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+
 
 
 

@@ -35,12 +35,16 @@ p{
     margin-bottom: 20px;
   }
 
+  h2{
+    text-align: center;
+  }
+
 
   
   label {
     display: block;
     padding: 5px;
-    font-size: 1.2vw;
+    font-size: 1.2vmax;
     font-weight: 800;
   }
   

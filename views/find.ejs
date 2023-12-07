@@ -58,12 +58,13 @@
         <p><strong>College:</strong> <%= user.college %></p>
         <p><strong>Branch:</strong> <%= user.branch %></p>
         <p><strong>Email:</strong> <%= user.email %></p>
-        <p><strong>Skills:</strong> <%= user.skills.join(', ') %></p>
         <p><strong>Year:</strong> <%= user.year %></p>
         <p><strong>Role:</strong> <%= user.role %></p>
+        <p><strong>Skills:</strong> <%= user.skills.join(', ') %></p>
         <p style="color: <%= user.status === 'Available' ? 'green' : user.status === 'Busy' ? 'yellow' : 'red' %>;"><strong>Status: </strong><%= user.status %></p>
-        <p><strong>Github:</strong> <a href="<%= user.github %>" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        <p><strong>LinkedIn:</strong> <a href="<%= user.linkedin %>" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        <p><strong></strong> <a href="<%= user.github %>" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><strong></strong> <a href="<%= user.linkedin %>" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+        
       </div>
     </div>
       <% }); %>

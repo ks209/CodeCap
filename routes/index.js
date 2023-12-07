@@ -33,6 +33,7 @@ router.get('/find', isLoggedIn, async function(req, res, next) {
 router.get('/hackathon', isLoggedIn, async function(req, res, next) {
   const hackathons = await hackathonModel.find({ date: { $gte: new Date() } });
   res.render('hackathon',{hackathons: hackathons});
+  console.log(hackathons);
 });
 
 router.post('/login', passport.authenticate("local", {
