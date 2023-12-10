@@ -13,6 +13,10 @@ router.get('/', function(req, res, next) {
   res.redirect("/login")
 });
 
+router.get('/us', function(req, res, next) {
+  res.render("us");
+});
+
 router.get('/login', function(req, res, next) {
   res.render('login',{error: req.flash('error')});
 });
@@ -93,6 +97,7 @@ router.post('/update', isLoggedIn, async function(req, res, next) {
     linkedin: req.body.linkedin,
     role: req.body.role,
     updatedAt: new Date(),
+    email: req.body.email,
   });
   res.redirect("home");
 
